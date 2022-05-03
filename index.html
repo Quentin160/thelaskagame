@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Glass Bridge Game</title>
+  </head>
+  <body>
+    <!-- WELCOME SCREEN -->
+    <div id="welcome-screen" class="container">
+      <h1>Choose your path wisely!</h1>
+      <button id="start-btn">Start!</button>
+      <h1>Use <img id="arrow-img" src="./images/arrowbtns.png" /> to navigate through the bridge.</h1>
+      <h3>You will jump to the selected pane.</h3>
+    </div>
+
+    <!-- GAME SCREEN -->
+    <div class="container">
+      <h2 id="scoreh2">SCORE: <span id="score">0</span></h2>
+      <canvas id="game-canvas" width="600" height="800"></canvas>
+    </div>
+
+    <!-- GAME OVER SCREEN -->
+    <div id="gameover-screen" class="container">
+      <h2>You chose the wrong path too many times.</h2>
+      <!-- <h2>Your score:<span id="finalScore">0</span></h2> -->
+      <button id="restart-btn">Play Again?</button>
+    </div>
+
+    <!-- WINNING SCREEN -->
+
+    <div id="winning-screen" class="container">
+      <h2>Congratulations! You reached the other side.</h2>
+      <!-- <h2>Your score:<span id="finalScore">0</span></h2> -->
+      <button id="play-again-btn">Play Again?</button>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/player.js"></script>
+    <script src="./scripts/bridge.js"></script>
+    <script src="./scripts/hearts.js"></script>
+  </body>
+</html>
